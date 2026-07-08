@@ -1,11 +1,11 @@
 import { useNavigate } from 'react-router-dom';
 import {
   ArrowLeft, User, MapPin, Package, Zap, Clock, Calendar,
-  CheckCircle2, Shield, Camera, MessageSquare, CalendarPlus,
+  CheckCircle2, Shield, Camera, MessageSquare,
   Building2, Wrench, Eye, AlertTriangle, Heart, SprayCan,
 } from 'lucide-react';
 import Header from '../components/Header';
-import { KpiCard, SectionCard, StatusBadge, TimelineItem } from '../components/ui';
+import { SectionCard, StatusBadge } from '../components/ui';
 
 const jobData = {
   jobId: 'JOB-2026-0142',

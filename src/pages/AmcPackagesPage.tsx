@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+
 import {
   Sparkles, Check, ArrowRight, CalendarRange,
   BarChart3, History, RefreshCw, ChevronDown, ChevronUp,
@@ -36,7 +36,6 @@ const tierAccent = {
 };
 
 export default function AmcPackagesPage() {
-  const navigate = useNavigate();
   const [expandedPkg, setExpandedPkg] = useState<string | null>('Premium');
 
   return (

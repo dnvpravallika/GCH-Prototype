@@ -6,7 +6,7 @@ import {
   Package, ChevronDown, ChevronUp,
 } from 'lucide-react';
 import Header from '../components/Header';
-import { SectionCard, StatusBadge } from '../components/ui';
+import { SectionCard } from '../components/ui';
 import { bundledPackages, cleaningPriceSlabs, checkupPriceSlabs, formatCurrency } from '../data';
 
 const tierAccent = {

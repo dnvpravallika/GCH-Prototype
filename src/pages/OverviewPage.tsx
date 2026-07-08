@@ -126,7 +126,7 @@ export default function OverviewPage() {
                     ))}
                   </Pie>
                   <Tooltip
-                    formatter={(value: number) => [value, '']}
+                    formatter={(value) => [value, '']}
                     contentStyle={{ borderRadius: '8px', border: '1px solid #e2e8f0', fontSize: '12px' }}
                   />
                 </PieChart>

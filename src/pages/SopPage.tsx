@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import {
   CheckCircle2, Circle, Shield, SprayCan, Wrench, Zap,
-  AlertTriangle, ArrowDown, Eye, Droplets, Sun,
+  AlertTriangle, Eye, Droplets, Sun,
   Cable, Battery, Thermometer, Settings, ClipboardCheck,
-  HardHat, Clock, BookOpen,
+  HardHat, Clock,
 } from 'lucide-react';
 import Header from '../components/Header';
 import { SectionCard, StatusBadge } from '../components/ui';

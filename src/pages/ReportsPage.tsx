@@ -1,7 +1,7 @@
-import { useNavigate } from 'react-router-dom';
+
 import {
   ClipboardList, CheckCircle2, Clock, Users, IndianRupee,
-  FileText, Download, TrendingUp, BarChart3, CalendarCheck,
+  Download,
   SprayCan, Wrench, HeartPulse, Eye, Shield,
 } from 'lucide-react';
 import {
@@ -64,7 +64,6 @@ const recentActivity = [
 ];
 
 export default function ReportsPage() {
-  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen">
@@ -98,7 +97,7 @@ export default function ReportsPage() {
                   <YAxis tick={{ fontSize: 12, fill: '#94a3b8' }} />
                   <Tooltip
                     contentStyle={{ borderRadius: '10px', border: '1px solid #e2e8f0', fontSize: '12px' }}
-                    formatter={(value: number) => [value, 'Cleaning Visits']}
+                    formatter={(value) => [value, 'Cleaning Visits']}
                   />
                   <Bar dataKey="visits" fill="#10b981" radius={[6, 6, 0, 0]} />
                 </BarChart>
@@ -116,7 +115,7 @@ export default function ReportsPage() {
                   <YAxis tick={{ fontSize: 12, fill: '#94a3b8' }} />
                   <Tooltip
                     contentStyle={{ borderRadius: '10px', border: '1px solid #e2e8f0', fontSize: '12px' }}
-                    formatter={(value: number) => [value, 'Checkups']}
+                    formatter={(value) => [value, 'Checkups']}
                   />
                   <Bar dataKey="checkups" fill="#3b82f6" radius={[6, 6, 0, 0]} />
                 </BarChart>
@@ -147,7 +146,7 @@ export default function ReportsPage() {
                   </Pie>
                   <Tooltip
                     contentStyle={{ borderRadius: '8px', border: '1px solid #e2e8f0', fontSize: '12px' }}
-                    formatter={(value: number) => [value, 'Customers']}
+                    formatter={(value) => [value, 'Customers']}
                   />
                 </PieChart>
               </ResponsiveContainer>

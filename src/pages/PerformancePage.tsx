@@ -1,15 +1,15 @@
-import { useNavigate } from 'react-router-dom';
+
 import {
   Zap, HeartPulse, BarChart3, Activity, Radio, TrendingUp,
-  Sun, Droplets, CheckCircle2, AlertTriangle, Clock,
-  ArrowRight, SprayCan, Wrench, Shield, Eye,
+  Droplets, CheckCircle2, AlertTriangle, Clock,
+  SprayCan, Wrench, Shield, Eye,
 } from 'lucide-react';
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
-  ReferenceLine, BarChart, Bar, Cell,
+  ReferenceLine,
 } from 'recharts';
 import Header from '../components/Header';
-import { KpiCard, SectionCard, StatusBadge, TimelineItem } from '../components/ui';
+import { KpiCard, SectionCard, StatusBadge } from '../components/ui';
 
 // Static 30-day generation data with cleaning impact markers
 const generationData = [
@@ -76,7 +76,6 @@ const recommendations = [
 ];
 
 export default function PerformancePage() {
-  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen">
@@ -120,7 +119,7 @@ export default function PerformancePage() {
                 <YAxis tick={{ fontSize: 11, fill: '#94a3b8' }} domain={[140, 200]} />
                 <Tooltip
                   contentStyle={{ borderRadius: '10px', border: '1px solid #e2e8f0', fontSize: '12px' }}
-                  formatter={(value: number) => [`${value} kWh`, 'Output']}
+                  formatter={(value) => [`${value} kWh`, 'Output']}
                 />
                 <ReferenceLine x="Jun 25" stroke="#10b981" strokeDasharray="4 4" label={{ value: 'Cleaning', position: 'top', fill: '#10b981', fontSize: 10 }} />
                 <ReferenceLine x="Jul 10" stroke="#10b981" strokeDasharray="4 4" label={{ value: 'Cleaning', position: 'top', fill: '#10b981', fontSize: 10 }} />

@@ -3,8 +3,8 @@ import {
   HeartPulse, Zap, AlertTriangle, SprayCan,
   Eye, CalendarPlus, FileText,
   Building2, MapPin, Package, ArrowLeft,
-  CheckCircle2, Clock, Wrench, Shield, Thermometer,
-  Cable, Battery, Sun as SunIcon,
+  Shield, Thermometer,
+  Cable, Battery,
 } from 'lucide-react';
 import Header from '../components/Header';
 import { KpiCard, SectionCard, StatusBadge, TimelineItem } from '../components/ui';
